@@ -11,7 +11,7 @@
   overflow: hidden;
   border-radius: 50%;
   border: 15px solid var(--color-border);
-  margin-right: 8rem;
+  margin: 0 8rem 8rem;
 }
 
 .about-image img {
@@ -33,4 +33,39 @@
 
 .about-description p:nth-of-type(2) {
   font-weight: 700;
+}
+
+@media (max-width: 75em) {
+  .about-description {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 50em) {
+  .about-image {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .about-description p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .about-description {
+    text-align: center;
+  }
+  .about-image {
+    margin: 0 0 4rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .about-image {
+    height: 20rem;
+    width: 20rem;
+  }
 }
