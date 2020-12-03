@@ -1,6 +1,7 @@
 header {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .header-title-wrapper {
@@ -28,7 +29,71 @@ header {
   text-align: center;
 }
 
-@media (max-width: 50em) {
+.header-btn {
+  border: none;
+  outline: none;
+  background: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.header-btn:hover {
+  transform: translateY(-4px);
+}
+
+.header-btn:active {
+  transform: initial;
+}
+
+.header-arrow,
+.header-arrow > * {
+  height: 6rem;
+  width: 6rem;
+  fill: var(--color-secondary);
+}
+
+.header-images-wrapper {
+  display: flex;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.header-images-wrapper > * {
+  flex: 0 0 100%;
+}
+
+.header-navigation {
+  width: 100%;
+  height: 10rem;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-navigation span {
+  display: block;
+  height: 10px;
+  width: 60px;
+  background: var(--color-secondary);
+  border: 2px solid var(--color-font);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.header-navigation span.active {
+  background: var(--color-primary);
+}
+
+.header-navigation span:not(:last-child) {
+  margin-right: 4rem;
+}
+
+@media (max-width: 31.25em) {
   .header-title-wrapper {
     background: var(--color-secondary);
     color: var(--color-font);
@@ -39,5 +104,12 @@ header {
 
   .header-title {
     font-size: 4rem;
+  }
+
+  .header-arrow,
+  .header-arrow > * {
+    height: 6rem;
+    width: 6rem;
+    fill: var(--color-font);
   }
 }

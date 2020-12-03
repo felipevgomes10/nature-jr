@@ -16,11 +16,31 @@
     <div class="flex header-title-wrapper">
       <h1 class="header-title">Nature</h1>
       <p class="header-subtitle">Viva a vida como nunca antes</p>
+      <button class="header-btn">
+        <svg class="header-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#3c4c20" d="M27.414 19.414l-10 10c-0.781 0.781-2.047 0.781-2.828 0l-10-10c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l6.586 6.586v-19.172c0-1.105 0.895-2 2-2s2 0.895 2 2v19.172l6.586-6.586c0.39-0.39 0.902-0.586 1.414-0.586s1.024 0.195 1.414 0.586c0.781 0.781 0.781 2.047 0 2.828z"></path>
+        </svg>
+      </button>
     </div>
-    <picture>
-      <source srcset="./img/hero/hero-3-small.jpg" media="(max-width: 43.75em)">
-      <img src="./img/hero/hero-3-large.jpg" alt="hero-photo">
-    </picture>
+    <div class="header-images-wrapper">
+      <picture>
+        <source srcset="./img/hero/hero-small.jpg" media="(max-width: 43.75em)">
+        <img src="./img/hero/hero-large.jpg" alt="hero-photo">
+      </picture>
+      <picture>
+        <source srcset="./img/hero/hero-2-small.jpg" media="(max-width: 43.75em)">
+        <img src="./img/hero/hero-2-large.jpg" alt="hero-photo">
+      </picture>
+      <picture>
+        <source srcset="./img/hero/hero-3-small.jpg" media="(max-width: 43.75em)">
+        <img src="./img/hero/hero-3-large.jpg" alt="hero-photo">
+      </picture>
+    </div>
+    <div class="flex header-navigation">
+      <span class="active" data-slider="0"></span>
+      <span data-slider="1"></span>
+      <span data-slider="2"></span>
+    </div>
   </header>
 
   <section class=" flex tours-section">

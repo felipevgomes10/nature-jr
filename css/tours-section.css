@@ -29,10 +29,6 @@
 }
 
 @media (max-width: 50em) {
-  .tours-section {
-    position: relative;
-  }
-
   .cards-wrapper {
     width: 100%;
     margin: 4rem;
@@ -46,5 +42,11 @@
 
   .tour-card-description p {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .tours-section {
+    position: relative;
   }
 }
