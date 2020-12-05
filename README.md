@@ -22,9 +22,14 @@ The about section is intended to have some information about the team behind the
 
 # Running the project
 
-In order to run this project, you have to install the live-server plugin on IDE. Lastly, this project uses some dependencies and to install them
-you just need to run the code below on your terminal:
+In order to run this project, you have to install some dependencies and to install them you just need to run the code below on your terminal:
 
 ```
 npm install
+```
+
+The project uses Gulp to make the development process easier, to start the Gulp tasks and the local server go to the terminal and run:
+
+```
+gulp
 ```
