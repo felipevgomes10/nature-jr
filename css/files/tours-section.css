@@ -1,6 +1,9 @@
 .tours-section {
   height: auto;
   background: var(--color-secondary);
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .cards-wrapper {
@@ -15,6 +18,9 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .tour-card-image {
