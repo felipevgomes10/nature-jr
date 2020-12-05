@@ -3,6 +3,9 @@
   height: auto;
   padding: 8rem;
   background: var(--color-tertiary);
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .about-image {
@@ -21,6 +24,9 @@
 
 .about-description {
   flex: 0 0 50%;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .about-description h1 {
