@@ -1,9 +1,9 @@
-import { smoothScroll, slider } from './scripts/hero.js';
+import { smoothScroll, slider } from './files/hero.js';
 import {
   revealOnScroll,
   revealAboutText,
   revealCards,
-} from './scripts/revealOnScroll.js';
+} from './files/revealOnScroll.js';
 
 smoothScroll();
 slider();
